@@ -1,0 +1,78 @@
+admin
+-----------
+admin_id(PK)
+username
+password
+
+manager
+-----------
+manager_id(PK)
+first_name
+last_name
+contact_no
+email_id
+is_active
+password
+
+users
+-----------
+user_id (PK)
+first_name
+last_name
+email_id
+password
+contact_no
+
+turf
+-----------
+turf_id (PK)
+manager_id(FK)
+turf_name
+turf_add
+turf_type
+turf_amount
+is_available
+
+booking
+-----------
+booking_id
+date_time
+payment_id
+user_id (FK)
+turf_id (FK)
+slot_id (FK)
+start_time
+end_time
+status
+
+Event
+-----------
+event_id (PK)
+event_name
+manager_id(FK)
+turf_id (FK)
+description
+date_time
+
+slot
+-----------
+slot_id (PK)
+turf_id (FK)
+date_time
+availability_status
+
+payment
+-----------
+payment_id (PK)
+booking_id (FK)
+user_id (FK)
+payment_date
+amount
+payment_status
+
+notification
+-----------
+notification_id (PK)
+user_id (FK)
+message
+time_stamp
