@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.app.dao.AdminRepository;
-import com.app.pojos.Admin;
+import com.app.pojo.Admin;
 
 @Service
 @Transactional
@@ -37,5 +37,5 @@ public class AdminServiceImpl implements IAdminService {
     public List<Admin> fetchAllAdmin() {
         return adminRepository.findAll();
     }
-    
+
 }

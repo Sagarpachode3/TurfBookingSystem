@@ -2,7 +2,7 @@ package com.app.service;
 
 import java.util.List;
 
-import com.app.pojos.Payment;
+import com.app.pojo.Payment;
 
 public interface IPaymentService {
 
@@ -11,5 +11,4 @@ public interface IPaymentService {
 	String deletePaymentDetails(int pId);
 	Payment getPaymentDetails(int pId);
 	Payment updatePaymentDetails(Payment pdetails);
-	
 }

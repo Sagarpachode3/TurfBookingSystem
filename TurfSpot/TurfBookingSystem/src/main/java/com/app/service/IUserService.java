@@ -2,10 +2,9 @@ package com.app.service;
 
 import java.util.List;
 
-import com.app.pojos.User;
+import com.app.pojo.User;
 
 public interface IUserService {
-
 	User regUser(User transientUser);
 	List<User> fetchAllUsers();
 	User fetchUserByEmailIdAndPassword(String email,String password); //public
@@ -13,5 +12,5 @@ public interface IUserService {
 	String deleteUserDetails(int userId);
 	User updateUserDetails(User detachedUser);
 	String updateUserPassword(String email, String pass);
-	
+
 }

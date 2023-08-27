@@ -1,30 +1,31 @@
 package com.app.service;
 
+import java.util.List;
 
-import com.app.dao.FeedBackRepository;
-import com.app.pojos.FeedBack;
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
-import java.util.List;
+import com.app.dao.FeedBackRepository;
+import com.app.pojo.FeedBack;
 
 @Service
 @Transactional
-public class FeedBackServiceImpl implements IFeedBackService  {
-    
+public class FeedBackServiceImpl implements IFeedBackService {
+
 	//FeedBackServiceImpl depends on FeedBackRepository
-	@Autowired
-    private FeedBackRepository feedBackRepository;
+		@Autowired
+	    private FeedBackRepository feedBackRepository;
 
-    @Override
-    public List<FeedBack> fetchAllfeedback() {
-        return feedBackRepository.findAll();
-    }
+	    @Override
+	    public List<FeedBack> fetchAllfeedback() {
+	        return feedBackRepository.findAll();
+	    }
 
-    @Override
-    public FeedBack saveFeedback(FeedBack feedback) {
-        return feedBackRepository.save(feedback);
-    }
+	    @Override
+	    public FeedBack saveFeedback(FeedBack feedback) {
+	        return feedBackRepository.save(feedback);
+	    }
 
 }
