@@ -2,7 +2,7 @@ package com.app.service;
 
 import java.util.List;
 
-import com.app.pojo.Admin;
+import com.app.pojos.Admin;
 
 public interface IAdminService {
 

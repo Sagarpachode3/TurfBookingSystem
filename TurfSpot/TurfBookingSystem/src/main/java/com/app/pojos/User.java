@@ -1,22 +1,19 @@
-package com.app.pojo;
+package com.app.pojos;
 
 import javax.persistence.Column;
-import javax.persistence.Convert;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.app.converter.BooleanToStringConverter;
-
 @Entity
-@Table(name = "manager")
-public class Manager {
+@Table(name = "users")
+public class User {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int managerId;
+	private int userId;
 
 	@Column(length = 30, nullable = false)
 	private String firstName;
@@ -33,14 +30,11 @@ public class Manager {
 	@Column(length = 40, nullable = false)
 	private String password;
 
-	@Convert(converter = BooleanToStringConverter.class)
-	private Boolean isActive;
-
-	public Manager() {
+	public User() {
 
 	}
 
-	public Manager(String firstName, String lastName, long contactNo, String emailId, String password) {
+	public User(String firstName, String lastName, long contactNo, String emailId, String password) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -49,12 +43,12 @@ public class Manager {
 		this.password = password;
 	}
 
-	public int getManagerId() {
-		return managerId;
+	public int getUserId() {
+		return userId;
 	}
 
-	public void setManagerId(int managerId) {
-		this.managerId = managerId;
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
 
 	public String getFirstName() {
@@ -97,19 +91,10 @@ public class Manager {
 		this.password = password;
 	}
 
-	public Boolean getIsActive() {
-		return isActive;
-	}
-
-	public void setIsActive(Boolean isActive) {
-		this.isActive = isActive;
-	}
-
 	@Override
 	public String toString() {
-		return "Manager [managerId=" + managerId + ", firstName=" + firstName + ", lastName=" + lastName
-				+ ", contactNo=" + contactNo + ", emailId=" + emailId + ", password=" + password + ", isActive="
-				+ isActive + "]";
+		return "User [userId=" + userId + ", firstName=" + firstName + ", lastName=" + lastName + ", contactNo="
+				+ contactNo + ", emailId=" + emailId + ", password=" + password + "]";
 	}
 
 }

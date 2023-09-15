@@ -2,7 +2,7 @@ package com.app.service;
 
 import java.util.List;
 
-import com.app.pojo.Manager;
+import com.app.pojos.Manager;
 
 public interface IManagerService {
 	Manager regManager(Manager transientManager);

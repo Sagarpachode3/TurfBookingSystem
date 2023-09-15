@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.app.dao.UserRepository;
-import com.app.pojo.User;
+import com.app.pojos.User;
 
 @Service
 @Transactional

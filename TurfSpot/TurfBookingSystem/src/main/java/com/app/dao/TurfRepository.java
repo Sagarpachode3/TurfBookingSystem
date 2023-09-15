@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.app.pojo.Turf;
+import com.app.pojos.Turf;
 
 public interface TurfRepository extends JpaRepository<Turf, Integer> {
 

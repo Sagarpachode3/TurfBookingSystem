@@ -1,4 +1,4 @@
-package com.app.pojo;
+package com.app.pojos;
 
 import javax.persistence.Column;
 import javax.persistence.Convert;
@@ -8,7 +8,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.app.converter.BooleanToStringConverter;
+import com.app.Converter.BooleanToStringConverter;
 
 @Entity
 @Table(name = "turf")
@@ -17,31 +17,25 @@ public class Turf {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int turfId;
-	
-	@Column(length = 30,nullable=false)
+	@Column(length = 20, nullable = false)
 	private String turfName;
-	
-	@Column(length = 50,nullable=false)
-	private String turfAdd;	
-	
-	@Column(length = 30,nullable=false)
+	@Column(length = 50, nullable = false)
+	private String turfAdd;
+	@Column(length = 30, nullable = false)
 	private String turfType;
-	
 	@Column(name = "manager_id")
 	private int managerId;
-	
-	@Column(nullable=false)
+	@Column(nullable = false)
 	private double turfAmount;
-	
-	@Convert(converter=BooleanToStringConverter.class)
+	@Convert(converter = BooleanToStringConverter.class)
 	private Boolean isAvailable;
 
-	public Turf() {
-		
-	}
 
-	public Turf(int turfId, String turfName, String turfAdd, String turfType, int managerId, double turfAmount,
-			Boolean isAvailable) {
+	public Turf() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Turf(int turfId, String turfName, String turfAdd, String turfType, int managerId, double turfAmount, Boolean isAvailable) {
 		super();
 		this.turfId = turfId;
 		this.turfName = turfName;
@@ -50,6 +44,15 @@ public class Turf {
 		this.managerId = managerId;
 		this.turfAmount = turfAmount;
 		this.isAvailable = isAvailable;
+	}
+
+	
+	public Boolean getAvailable() {
+		return isAvailable;
+	}
+
+	public void setAvailable(Boolean available) {
+		isAvailable = available;
 	}
 
 	public int getTurfId() {
@@ -100,23 +103,10 @@ public class Turf {
 		this.turfAmount = turfAmount;
 	}
 
-	public Boolean getIsAvailable() {
-		return isAvailable;
-	}
-
-	public void setIsAvailable(Boolean isAvailable) {
-		this.isAvailable = isAvailable;
-	}
-
 	@Override
 	public String toString() {
 		return "Turf [turfId=" + turfId + ", turfName=" + turfName + ", turfAdd=" + turfAdd + ", turfType=" + turfType
 				+ ", managerId=" + managerId + ", turfAmount=" + turfAmount + ", isAvailable=" + isAvailable + "]";
 	}
-	
-	
-	
-	
-	
 	
 }

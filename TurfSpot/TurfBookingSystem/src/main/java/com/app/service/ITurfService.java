@@ -2,7 +2,7 @@ package com.app.service;
 
 import java.util.List;
 
-import com.app.pojo.Turf;
+import com.app.pojos.Turf;
 
 public interface ITurfService {
 	Turf findByTurfId(int turfId);
