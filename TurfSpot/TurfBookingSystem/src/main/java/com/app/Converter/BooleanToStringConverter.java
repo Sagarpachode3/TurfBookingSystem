@@ -1,4 +1,4 @@
-package com.app.converter;
+package com.app.Converter;
 
 import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;

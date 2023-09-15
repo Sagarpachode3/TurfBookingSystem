@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.app.dao.AdminRepository;
-import com.app.pojo.Admin;
+import com.app.pojos.Admin;
 
 @Service
 @Transactional

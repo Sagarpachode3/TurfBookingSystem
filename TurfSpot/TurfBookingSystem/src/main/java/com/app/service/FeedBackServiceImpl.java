@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.app.dao.FeedBackRepository;
-import com.app.pojo.FeedBack;
+import com.app.pojos.FeedBack;
 
 @Service
 @Transactional
