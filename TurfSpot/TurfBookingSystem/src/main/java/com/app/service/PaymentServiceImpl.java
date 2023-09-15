@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.app.customExc.PaymentHandlingException;
 import com.app.dao.PaymentRepository;
-import com.app.pojo.Payment;
+import com.app.pojos.Payment;
 
 public class PaymentServiceImpl implements IPaymentService {
 

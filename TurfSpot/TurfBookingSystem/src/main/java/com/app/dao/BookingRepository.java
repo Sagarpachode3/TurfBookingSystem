@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import com.app.pojo.Booking;
+import com.app.pojos.Booking;
 
 @Repository
 public interface BookingRepository extends JpaRepository<Booking, Integer>{

@@ -1,4 +1,4 @@
-package com.app.pojo;
+package com.app.pojos;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

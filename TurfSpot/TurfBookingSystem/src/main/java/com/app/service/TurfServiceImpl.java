@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.app.dao.TurfRepository;
-import com.app.pojo.Turf;
+import com.app.pojos.Turf;
 
 public class TurfServiceImpl implements ITurfService {
 

@@ -2,7 +2,7 @@ package com.app.service;
 
 import java.util.List;
 
-import com.app.pojo.User;
+import com.app.pojos.User;
 
 public interface IUserService {
 	User regUser(User transientUser);

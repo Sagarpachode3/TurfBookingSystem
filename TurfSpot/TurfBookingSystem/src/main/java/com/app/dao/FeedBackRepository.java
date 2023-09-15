@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.app.pojo.FeedBack;
+import com.app.pojos.FeedBack;
 
 @Repository
 public interface FeedBackRepository extends JpaRepository<FeedBack, Integer> {

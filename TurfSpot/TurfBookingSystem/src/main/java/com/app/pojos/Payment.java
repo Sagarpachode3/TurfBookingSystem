@@ -1,4 +1,4 @@
-package com.app.pojo;
+package com.app.pojos;
 
 import java.time.LocalDate;
 

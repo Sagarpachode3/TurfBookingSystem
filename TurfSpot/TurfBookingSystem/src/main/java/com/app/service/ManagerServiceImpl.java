@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.app.dao.ManagerRepository;
-import com.app.pojo.Manager;
+import com.app.pojos.Manager;
 
 @Service
 @Transactional

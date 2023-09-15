@@ -3,7 +3,7 @@ package com.app.service;
 import java.time.LocalDate;
 import java.util.List;
 
-import com.app.pojo.Booking;
+import com.app.pojos.Booking;
 
 public interface IBookingService {
 
